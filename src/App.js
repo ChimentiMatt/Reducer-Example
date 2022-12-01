@@ -26,10 +26,10 @@ function App() {
         <h1>Reducer Example</h1>
         <h4>Both variables will go through 50 loops that attempts to increment on click. Only the reducer adds to previous state </h4>
         {/* Will increment only 1 value despite 50 loops */}
-        <p>State counter: {counter}</p> 
+        <p>useState counter: {counter}</p> 
         {/* Will increment 50 times */}
-        <p>Reducer counter: {state.money}</p>
-        <button onClick={() => {increment()}}>Add Money</button>
+        <p>useReducer counter: {state.money}</p>
+        <button onClick={() => {increment()}}>Loop 50 times on both types of state</button>
 
     </div>
   );
